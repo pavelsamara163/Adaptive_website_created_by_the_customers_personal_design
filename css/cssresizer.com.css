@@ -1,0 +1,1878 @@
+
+*{
+	padding: 0px;margin:0px;
+}
+
+body{
+	width: auto;
+	height: auto;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
+    display: block;
+}
+
+
+/*=============== SCROllBUT =================*/
+
+#toTop {
+	display:none;
+	text-decoration:none;
+	position:fixed;
+	bottom:10px;
+	right:10px;
+	overflow:hidden;
+	width:51px;
+	height:51px;
+	border:none;
+	text-indent:100%;
+	background:url(../assets/scrollbut/img/ui.totop.png) no-repeat left top;
+	}
+
+		#toTopHover {
+			background:url(../assets/scrollbut/img/ui.totop.png) no-repeat left -51px;
+			width:51px;
+			height:51px;
+			display:block;
+			overflow:hidden;
+			float:left;
+			opacity: 0;
+			-moz-opacity: 0;
+			filter:alpha(opacity=0);
+		}
+
+		#toTop:active, #toTop:focus {
+			outline:none;
+		}
+
+
+/*==========================>ШРИФТЫ<==========================*/
+
+@font-face {
+	font-family: 'Conv_Playball-Regular';
+	src: url('css/fonts/Playball-Regular.eot');
+	src: local('☺'), url('css/fonts/Playball-Regular.woff') format('woff'), url('fonts/Playball-Regular.ttf') format('truetype'), url('fonts/Playball-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_MyriadPro-Regular';
+	src: url('css/fonts/MyriadPro-Regular.eot');
+	src: local('☺'), url('css/fonts/MyriadPro-Regular.woff') format('woff'), url('fonts/MyriadPro-Regular.ttf') format('truetype'), url('fonts/MyriadPro-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_Proxima Nova Light';
+	src: url('css/fonts/Proxima Nova Light.eot');
+	src: local('☺'), url('css/fonts/Proxima Nova Light.woff') format('woff'), url('fonts/Proxima Nova Light.ttf') format('truetype'), url('fonts/Proxima Nova Light.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_Proxima Nova Regular';
+	src: url('css/fonts/Proxima Nova Regular.eot');
+	src: local('☺'), url('css/fonts/Proxima Nova Regular.woff') format('woff'), url('fonts/Proxima Nova Regular.ttf') format('truetype'), url('fonts/Proxima Nova Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_Proxima Nova Semibold';
+	src: url('css/fonts/Proxima Nova Semibold.eot');
+	src: local('☺'), url('css/fonts/Proxima Nova Semibold.woff') format('woff'), url('fonts/Proxima Nova Semibold.ttf') format('truetype'), url('fonts/Proxima Nova Semibold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: 'Permanent Marker';
+	src: url('../css/fonts/PermanentMarker.ttf');
+}
+@font-face{
+	font-family: 'Architects Daughter';
+	src: url('../css/fonts/ArchitectsDaughter.ttf');
+}
+
+@font-face{
+	font-family: 'Gochi Hand';
+	src: url('../css/fonts/GochiHand-Regular.ttf');
+}
+@font-face{
+	font-family: 'a_SamperOtl';
+	src: url('../css/fonts/a_SamperOtl.ttf');
+}
+@font-face{
+	font-family: 'Stylo_Bold';
+	src: url('../css/fonts/Stylo_Bold.ttf');
+}
+@font-face{
+	font-family: 'Neuropol_Medium';
+	src: url('../css/fonts/Neuropol_Medium.ttf');
+}
+@font-face{
+	font-family: 'm_Ben_Krush';
+	src: url('../css/fonts/m_Ben_Krush.ttf');
+}
+@font-face{
+	font-family: 'EdgeLineOutline';
+	src: url('../css/fonts/EdgeLineOutline.otf');
+}
+
+/*==========================>ШАПКА<==========================*/
+
+#fon{
+	width: 100%;
+	height: 700px;
+	background-image: url(../img/335-min.jpg);
+	background-size: cover;
+	position: fixed;
+	z-index: -100;
+}
+
+
+nav#top_nav{
+	background-color: black;
+	text-align: center;
+	box-shadow: 1px 1px 1px 1px black;
+	opacity: 0.9;
+	
+
+	
+	
+	}
+
+
+.top_navigation{
+	text-align: center;
+	height: 30px;
+	
+	
+	
+}
+
+.top_navigation>li{
+	background-color: white;
+	padding: 17px;
+	border-radius: 2px;
+	border: 3px solid black;
+	
+}
+.top_navigation>li>a{
+
+	text-align: center;
+	text-decoration: none;
+	margin-top: 33px;
+	font-size: 20px;
+	
+	
+	
+	
+}
+.top_navigation>li>a{
+	font-size: 20px;
+	text-align: center;
+	font-family: 'Stylo_Bold';
+	color: black;
+	
+}
+
+
+.top_navigation>li:hover{
+	/*Неон*/text-shadow: #F02926 0px 0px 5px, #F02926 0px 0px 10px, 
+	#F02926 0px 0px 15px, #F02926
+	 0px 0px 20px, #F02926 0px 0px 30px, #F02926 0px 0px 40px,
+	  #F02926 0px 0px 50px, #F02926 0px 0px 75px;
+		background-color: black;
+	-webkit-transition: all 0.5s ease-in-out; 
+	}
+.top_navigation>li>a:hover{	
+	color: white;
+}	
+
+/*================>Главный экран<===========================*/
+
+section#main {
+		margin-top:70px;
+		padding-bottom: 100px;
+			}
+		.fon2{
+			width: 100%;
+			height: 700px;
+			opacity: 0.7;
+			background-color: black;
+			background-size: cover;
+			position: fixed;
+			z-index: -99;
+		}
+		.main_info{
+			padding-top: 15px;
+			text-align: center;
+		}
+		.main_info_logo{
+			text-align: center;
+			margin-right: 13px;
+		}
+		.glavn_desktop_ts>h1{
+			padding-bottom: 13px;
+			font-family: 'Stylo_Bold';
+			text-align: left;
+			font-size: 23px;
+			color: white;
+			text-shadow: #DA0809 0px 0px 5px, 
+			#DA0809 0px 0px 10px, 
+			#DA0809 0px 0px 15px, 
+			#DA0809 0px 0px 20px, 
+			#DA0809 0px 0px 30px, 
+			#DA0809 0px 0px 40px, 
+			#DA0809 0px 0px 50px, 
+			#DA0809 0px 0px 75px;
+			
+		}
+		
+		.glavn_desktop_phone>h3{
+			font-size: 23px;
+			font-family: 'Monoton';
+			color: white;
+			text-align: right;
+			text-shadow: #DA0809 0px 0px 5px, 
+			#DA0809 0px 0px 10px, 
+			#DA0809 0px 0px 15px, 
+			#DA0809 0px 0px 20px, 
+			#DA0809 0px 0px 30px, 
+			#DA0809 0px 0px 40px, 
+			#DA0809 0px 0px 50px, 
+			#DA0809 0px 0px 75px;
+		}
+
+
+		.glavn_desktop_phone span:nth-of-type(2) {
+		  animation: lower 20s linear infinite;
+		}
+		.glavn_desktop_phone span:nth-of-type(6) {
+		  animation: lower 12s linear infinite;
+		}
+		.glavn_desktop_phone span:nth-of-type(9) {
+		  animation: upper 5s linear infinite;
+		}
+		@keyframes upper {
+		  0%,19.999%,22%,62.999%,64%, 64.999%,70%,100% {
+		    opacity:.99; text-shadow: 0 0 80px #ffffff,0 0 30px #DA0809,0 0 6px #0000ff;
+		  }
+		  20%,21.999%,63%,63.999%,65%,69.999% {
+		    opacity:0.4; text-shadow: none; 
+		  }
+		}
+		@keyframes lower {
+		  0%,12%,18.999%,23%,31.999%,37%,44.999%,46%,49.999%,51%,58.999%,61%,68.999%,71%,85.999%,96%,100% {
+		    opacity:0.99; text-shadow: 0 0 80px red,0 0 30px #F90202,0 0 6px #461010;
+		  }
+		  19%,22.99%,32%,36.999%,45%,45.999%,50%,50.99%,59%,60.999%,69%,70.999%,86%,95.999% { 
+		    opacity:0.4; text-shadow: none; 
+		  }
+		}
+
+
+		.glavn_desktop_help{
+			border:4px solid white;
+			padding:8px;
+			background-color:black;
+			
+			text-align: center;
+		}
+
+
+		.glavn_desktop_help>h2{
+			
+			font-family: 'Neuropol_Medium';
+			text-shadow: #DA0809 0px 0px 5px, 
+			#DA0809 0px 0px 10px, 
+			#DA0809 0px 0px 15px, 
+			#DA0809 0px 0px 20px, 
+			#DA0809 0px 0px 30px, 
+			#DA0809 0px 0px 40px, 
+			#DA0809 0px 0px 50px, 
+			#DA0809 0px 0px 75px;
+			text-align: center;
+			color: white;
+			}
+			
+
+		.glavn_desktop_help>h2>span:nth-of-type(2) {
+		  animation: lower 20s linear infinite;
+		}
+		.glavn_desktop_help>h2>span:nth-of-type(3) {
+		  animation: lower 12s linear infinite;
+		}
+		.glavn_desktop_help>h2>span:nth-of-type(5) {
+		  animation: upper 5s linear infinite;
+		}
+		.glavn_desktop_help>h2>span:nth-of-type(6) {
+		  animation: upper 5s linear infinite;
+		}
+		.glavn_desktop_help>h2>span:nth-of-type(7) {
+		  animation: lower 12s linear infinite;
+		}
+		@keyframes upper {
+		  0%,19.999%,22%,62.999%,64%, 64.999%,70%,100% {
+		    opacity:.99; text-shadow: 0 0 80px #ffffff,0 0 30px #DA0809,0 0 6px #0000ff;
+		  }
+		  20%,21.999%,63%,63.999%,65%,69.999% {
+		    opacity:0.4; text-shadow: none; 
+		  }
+		}
+		@keyframes lower {
+		  0%,12%,18.999%,23%,31.999%,37%,44.999%,46%,49.999%,51%,58.999%,61%,68.999%,71%,85.999%,96%,100% {
+		    opacity:0.99; text-shadow: 0 0 80px red,0 0 30px #F90202,0 0 6px #461010;
+		  }
+		  19%,22.99%,32%,36.999%,45%,45.999%,50%,50.99%,59%,60.999%,69%,70.999%,86%,95.999% { 
+		    opacity:0.4; text-shadow: none; 
+		  }
+		}
+
+		
+		
+		
+
+
+		.glavn_desktop_zayvka{
+			margin-top: 20px;
+			background-color: black;
+			border: 3px solid white;
+			opacity: 0.9;
+		}
+		.glavn_desktop_zayvka>h4{
+			font-family: 'Stylo_Bold';
+			text-shadow: #DA0809 0px 0px 5px, 
+			#DA0809 0px 0px 10px, 
+			#DA0809 0px 0px 15px, 
+			#DA0809 0px 0px 20px, 
+			#DA0809 0px 0px 30px, 
+			#DA0809 0px 0px 40px, 
+			#DA0809 0px 0px 50px, 
+			#DA0809 0px 0px 75px;
+			padding-top: 20px;
+			color:white;
+			text-align: center;
+		}
+
+
+
+
+
+		.first_name_phone{
+			text-align: center;
+			
+		}
+		.last_name_phone{
+			text-align: center;
+			
+		}
+		.first_name_phone>input{
+			background-color:black;
+			border: 5px solid white;
+			padding-left: 15px;
+			color: white;
+			width: 250px;
+			height: 44px;
+
+		}
+		
+		input[name="first_name_phone"]{
+			font-family: 'Neuropol_Medium';
+			font-size: 14px;/* Приближение из-за подстановки шрифтов */
+			text-align: left;
+			margin-bottom:20px;
+			margin-top: 10px;
+			background-color: black;
+			color: red;
+			
+		}
+		#first_name_phone::-webkit-input-placeholder {
+			color:white;
+			text-shadow: 0px 0px 6px white;
+		}
+
+		
+
+		.last_name_phone>input{
+			background-color:black;
+			border: 5px solid white;
+			padding-left: 15px;
+			color: white;
+			width: 250px;
+			height: 44px;
+		}
+		input[name="last_name_phone"]{
+			font-family: 'Neuropol_Medium';
+			color:  red;
+			font-size: 14px;/* Приближение из-за подстановки шрифтов */
+			text-align: left;
+		}
+
+		#last_name_phone::-webkit-input-placeholder {
+			color:white;
+			text-shadow: 0px 0px 6px white;
+		}
+
+
+		.phone_buttons{
+			margin-top: 28px;
+			margin-bottom:15px;
+			text-align: center;
+
+		}
+		.phone_buttons>b{
+			font-family: 'Stylo_Bold';
+			color:  white;
+			font-size: 22px;
+			font-weight: 400;
+			text-align: center;
+			
+			
+
+		}
+		.phone_buttons>b>button{
+			
+			
+			margin-top: -10px;
+			margin-left: -10px;
+			padding:10px 10px;
+			border: none;
+			background-color: #EA0F0C;
+			box-shadow: 1px 1px 1px 1px #323232;
+			border-radius: 10px;
+		}
+		.phone_buttons>b>button:hover{
+			color:  black;
+			text-shadow: #EA0F0C 0px 0px 1px, 
+			#EA0F0C 0px 0px 5px, 
+			#EA0F0C 0px 0px 10px, 
+			#EA0F0C 0px 0px 15px, 
+			#EA0F0C 0px 0px 20px, 
+			#EA0F0C 0px 0px 25px, 
+			#EA0F0C 0px 0px 30px, 
+			#EA0F0C 0px 0px 35px;
+			background-color: white; 
+		}
+		.glavn_desktop_infocall{
+			margin-top: 20px;
+			background-color: black;
+			border: 3px solid white;
+		}
+		
+		.glavn_desktop_infocall>h4{
+
+			font-family: 'Neuropol_Medium'; 
+			text-shadow: 0px 0px 6px white;
+			color: white;
+			text-align: center;
+		}
+		.glavn_desktop_infocall>h3{
+			font-family: 'Neuropol_Medium';
+			text-shadow: 0px 0px 6px white;
+			color: white;
+			line-height: 40px;
+			text-align: center;
+		}
+
+
+
+/*=========================>Прикурить Авто<=================*/
+
+
+section#a_light{
+	background-color:  #f9f8f8;
+	position: center;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	}
+	.desktop_a_light>h2{
+		font-family: 'Neuropol_Medium'; 
+		color: white;
+		font-size: 36px;
+		letter-spacing: 0.9px;
+		text-align: center;
+		text-shadow: red 0px 0px 2px, 
+			red 0px 0px 2px, 
+			red 0px 0px 3px, 
+			red 0px 0px 4px, 
+			red 0px 0px 5px, 
+			red 0px 0px 6px, 
+			red 0px 0px 7px, 
+			red 0px 0px 8px;
+	}
+	.desktop_a_light_number>h2{
+		
+			color:  white;
+			font-size: 35px;
+			letter-spacing: 0.9px;
+			text-align: center;
+			margin-bottom: 33px;
+			font-family: 'Monoton';
+			text-shadow: #0000ff 0px 0px 2px, 
+			#0000ff 0px 0px 4px, 
+			#0000ff 0px 0px 8px, 
+			#0000ff 0px 0px 16px, 
+			#0000ff 0px 0px 24px, 
+			#0000ff 0px 0px 30px, 
+			#0000ff 0px 0px 40px, 
+			#0000ff 0px 0px 50px;
+			text-align: center;
+			
+		
+	}
+
+
+/*======================>Graphics<===========================*/
+
+section#types{
+	padding-top:50px;
+	}
+
+	.desktop_text_auto>h2{
+		font-family: 'Stylo_Bold';
+		color: red;
+		font-size: 33px;
+		
+	}
+
+	.desktop_text_autocall>h1{
+		color: white;
+		font-family: 'a_SamperOtl';		
+		font-size: 40px;
+		text-shadow: red 0px 0px 10px, 
+			red 0px 0px 24px, 
+			red 0px 0px 38px, 
+			red 0px 0px 46px, 
+			red 0px 0px 54px, 
+			red 0px 0px 60px, 
+			red 0px 0px 70px, 
+			red 0px 0px 80px;
+	}
+	.desktop_text_roadcity{
+		margin-top: 25px;
+	}
+	
+
+	.desktop_text_broken>h4{
+		color: white;
+		font-family: 'Stylo_Bold';
+		text-align: right;
+		
+	}
+	.desktop_text_brokenauto>h4{
+		margin-top: -7px;
+		color: white;
+		font-family: 'Stylo_Bold';
+		text-align: center;
+
+	}
+
+		.text_cena{
+		margin-top: 20px;
+		background-color: black;
+		background-size: cover;
+		opacity: 0.9;
+		margin-bottom:70px;
+		border: 3px solid white;
+		}
+		
+
+		
+		.text_cena>h4{
+			font-family: 'Stylo_Bold';
+			text-shadow: #DA0809 0px 0px 5px, 
+			#DA0809 0px 0px 10px, 
+			#DA0809 0px 0px 15px, 
+			#DA0809 0px 0px 20px, 
+			#DA0809 0px 0px 30px, 
+			#DA0809 0px 0px 40px, 
+			#DA0809 0px 0px 50px, 
+			#DA0809 0px 0px 75px;
+			padding-top:5px;
+			color:white;
+			text-align: center;
+		}
+
+
+
+
+		.first_name_phonetext{
+			text-align: center;
+			
+		}
+		.last_name_phonetext{
+			text-align: center;
+			
+		}
+		.broken_name_phone{
+			text-align: center;
+			
+		}
+		.first_name_phonetext>input{
+			background-color:black;
+			border: 5px solid white;
+			padding-left: 15px;
+			color: white;
+			width: 250px;
+			height: 44px;
+
+		}
+		
+		input[name="first_name_phonetext"]{
+			font-family: 'Neuropol_Medium';
+			font-size: 14px;/* Приближение из-за подстановки шрифтов */
+			text-align: left;
+			margin-bottom:10px;
+			margin-top: 5px;
+			background-color: black;
+			color: red;
+			
+		}
+		#first_name_phonetext::-webkit-input-placeholder {
+			color:white;
+			text-shadow: 0px 0px 6px white;
+		}
+
+
+
+		.last_name_phonetext>input{
+			background-color:black;
+			border: 5px solid white;
+			padding-left: 15px;
+			color: white;
+			width: 250px;
+			height: 44px;
+		}
+		input[name="last_name_phonetext"]{
+			font-family: 'Neuropol_Medium';
+			color:  red;
+			font-size: 14px;/* Приближение из-за подстановки шрифтов */
+			text-align: left;
+		}
+
+		#last_name_phonetext::-webkit-input-placeholder {
+			color:white;
+			text-shadow: 0px 0px 6px white;
+		}
+		
+
+
+		.broken_name_phone>input{
+			background-color:black;
+			border: 5px solid white;
+			padding-left: 5px;
+			color: white;
+			width: 250px;
+			height: 44px;
+
+		}
+		input[name="broken_name_phone"]{
+			font-family: 'Neuropol_Medium';
+			color:  red;
+			font-size: 14px;/* Приближение из-за подстановки шрифтов */
+			text-align: left;
+			margin-top:10px;
+
+		}
+
+		#broken_name_phone::-webkit-input-placeholder {
+			color:white;
+			text-shadow: 0px 0px 6px white;
+		}
+
+
+		
+
+		.phone_buttons_call{
+			margin-top: 28px;
+			margin-bottom: 20px;
+			text-align: center;
+
+		}
+		.phone_buttons_call>b{
+			font-family: 'Stylo_Bold';
+			color:  white;
+			font-size: 22px;
+			font-weight: 400;
+			text-align: center;
+			
+			
+
+		}
+		.phone_buttons_call>b>button{
+			
+			
+			margin-top: -10px;
+			margin-left: -10px;
+			padding:10px 10px;
+			border: none;
+			background-color: #EA0F0C;
+			box-shadow: 1px 1px 1px 1px #323232;
+			border-radius: 10px;
+		}
+		.phone_buttons_call>b>button:hover{
+			color:  black;
+			text-shadow: #EA0F0C 0px 0px 1px, 
+			#EA0F0C 0px 0px 5px, 
+			#EA0F0C 0px 0px 10px, 
+			#EA0F0C 0px 0px 15px, 
+			#EA0F0C 0px 0px 20px, 
+			#EA0F0C 0px 0px 25px, 
+			#EA0F0C 0px 0px 30px, 
+			#EA0F0C 0px 0px 35px;
+			background-color: white; 
+		}
+
+	
+
+		.section_info_more>h3{
+		font-family: 'Neuropol_Medium'; 
+		color: white;
+		font-size: 13px;/* Приближение из-за подстановки шрифтов */
+		font-weight: 400;
+		line-height: 25px;/* Приближение из-за подстановки шрифтов */
+		text-align: left;
+		text-shadow: white 0px 0px 10px, 
+			white 0px 0px 24px, 
+			white 0px 0px 38px, 
+			white 0px 0px 46px, 
+			white 0px 0px 54px, 
+			white 0px 0px 60px, 
+			white 0px 0px 70px, 
+			white 0px 0px 80px;
+
+		
+		}
+	.section_info_more{
+		margin-top:100px;
+		text-transform: uppercase;
+		
+	}
+
+	.text_phone_info>h3{
+		font-family: 'Neuropol_Medium';
+		color:  white;
+		font-size: 13px;/* Приближение из-за подстановки шрифтов */
+		font-weight: 400;
+		line-height: 25px;/* Приближение из-за подстановки шрифтов */
+		text-align: left;
+		text-shadow: white 0px 0px 10px, 
+			white 0px 0px 24px, 
+			white 0px 0px 38px, 
+			white 0px 0px 46px, 
+			white 0px 0px 54px, 
+			white 0px 0px 60px, 
+			white 0px 0px 70px, 
+			white 0px 0px 80px;
+	}
+	.text_phone_info{
+		margin-top:100px;
+		text-transform: uppercase;
+		
+	}
+
+
+
+/*==================>ERROR<==================================*/
+section#error{
+	padding-top: 15px;
+	padding-bottom:15px;
+	background-color: white;
+	}
+	.error_text>h2{
+		font-family: 'Neuropol_Medium'; 
+		color: white;
+		font-size: 33px;
+		letter-spacing: 0.9px;
+		text-align: center;
+		text-shadow: red 0px 0px 2px, 
+			red 0px 0px 2px, 
+			red 0px 0px 3px, 
+			red 0px 0px 4px, 
+			red 0px 0px 5px, 
+			red 0px 0px 6px, 
+			red 0px 0px 7px, 
+			red 0px 0px 8px;
+		text-transform:uppercase;
+		
+	}
+
+
+/*==============>SUBSCRIBE<===================*/
+section#subscribe{
+	
+	
+	}
+
+	.header_info_subscribe>h2{
+		font-family: 'Neuropol_Medium';
+			text-shadow: #DA0809 0px 0px 5px, 
+			#DA0809 0px 0px 10px, 
+			#DA0809 0px 0px 15px, 
+			#DA0809 0px 0px 20px, 
+			#DA0809 0px 0px 30px, 
+			#DA0809 0px 0px 40px, 
+			#DA0809 0px 0px 50px, 
+			#DA0809 0px 0px 75px;
+			text-align: center;
+			color: white;
+			font-size: 36px;
+			font-weight: 400;
+			letter-spacing: 0.9px;
+			text-align: center;
+			padding-top: 25px;
+	}
+
+	.body_subscribe{
+		text-align: center;
+		margin-top: 33px;
+		margin-bottom: 33px;
+	}
+
+
+		.first_name{
+			text-align: center;
+			
+		}
+		.last_name{
+			text-align: center;
+			
+			
+		}
+
+		.first_name>input{
+			background-color:black;
+			border: 5px solid white;
+			padding-left: 15px;
+			color: white;
+			width: 250px;
+			height: 44px;
+
+		}
+		
+		input[name="first_name"]{
+			font-family: 'Neuropol_Medium';
+			font-size: 14px;/* Приближение из-за подстановки шрифтов */
+			text-align: left;
+			background-color: black;
+			color: red;
+
+			
+		}
+
+		#first_name::-webkit-input-placeholder {
+			color:white;
+			text-shadow: 0px 0px 6px white;
+		}
+
+		
+
+		.last_name>input{
+			background-color:black;
+			border: 5px solid white;
+			padding-left: 15px;
+			color: white;
+			width: 250px;
+			height: 44px;
+		}
+		input[name="last_name"]{
+			font-family: 'Neuropol_Medium';
+			color:  red;
+			font-size: 14px;/* Приближение из-за подстановки шрифтов */
+			text-align: left;
+		}
+
+		#last_name::-webkit-input-placeholder {
+			color:white;
+			text-shadow: 0px 0px 6px white;
+		}
+
+
+		.subscribe_button{
+			
+			
+		}
+		.subscribe_button>b{
+			font-family: 'Stylo_Bold';
+			color:  white;
+			font-size:22px;
+			font-weight: 400;
+			text-align: center;
+
+			
+			
+
+		}
+		.subscribe_button>b>button{
+			padding:5px 5px;
+			border: none;
+			background-color: #EA0F0C;
+			box-shadow: 1px 1px 1px 1px #323232;
+			border-radius: 10px;
+		}
+		.subscribe_button>b>button:hover{
+			color:  black;
+			text-shadow: #EA0F0C 0px 0px 1px, 
+			#EA0F0C 0px 0px 5px, 
+			#EA0F0C 0px 0px 10px, 
+			#EA0F0C 0px 0px 15px, 
+			#EA0F0C 0px 0px 20px, 
+			#EA0F0C 0px 0px 25px, 
+			#EA0F0C 0px 0px 30px, 
+			#EA0F0C 0px 0px 35px;
+			background-color: white; 
+		}
+
+
+		.text_subscribe{
+			margin-bottom: 20px;
+			text-align: center;
+		}
+		.text_subscribe>h4{
+			font-family: 'Stylo_Bold';
+			color: white;
+		}
+
+/*================>РАБОТА В ГОРОДЕ<=================*/
+
+
+section#job_city{
+	
+	background-color: white;
+	}
+	.text_city{
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.text_city>h2{
+		font-family: 'Stylo_Bold';
+			text-align: center;
+			font-size: 40px;
+			color: white;
+			text-shadow: #DA0809 0px 0px 5px, 
+			#DA0809 0px 0px 10px, 
+			#DA0809 0px 0px 15px, 
+			#DA0809 0px 0px 20px, 
+			#DA0809 0px 0px 30px, 
+			#DA0809 0px 0px 40px, 
+			#DA0809 0px 0px 50px, 
+			#DA0809 0px 0px 75px;
+	}
+	.text_city>h3{
+			text-align: center;
+			font-size: 45px;
+			font-family: 'Monoton';
+			color: white;
+			text-shadow: #0000ff 0px 0px 2px, 
+			#0000ff 0px 0px 4px, 
+			#0000ff 0px 0px 8px, 
+			#0000ff 0px 0px 16px, 
+			#0000ff 0px 0px 24px, 
+			#0000ff 0px 0px 30px, 
+			#0000ff 0px 0px 40px, 
+			#0000ff 0px 0px 50px;
+		}
+
+/*================>Диагностика<===============================*/
+
+section#info_automobile{
+	
+	
+	}
+
+	.text_info_automobile{
+		margin-top: 70px;
+			border:4px solid white;
+			padding:8px;
+			background-color:black;
+			text-align: center;
+		}
+
+
+		.text_info_automobile>h1{
+			font-family: 'Neuropol_Medium';
+			text-shadow: #DA0809 0px 0px 5px, 
+			#DA0809 0px 0px 10px, 
+			#DA0809 0px 0px 15px, 
+			#DA0809 0px 0px 20px, 
+			#DA0809 0px 0px 30px, 
+			#DA0809 0px 0px 40px, 
+			#DA0809 0px 0px 50px, 
+			#DA0809 0px 0px 75px;
+			text-align: center;
+			color: white;
+			}
+
+			.text_info_automobile>h1>span:nth-of-type(5) {
+		  	animation: lower 20s linear infinite;
+			}
+			.text_info_automobile>h1>span:nth-of-type(3) {
+			  animation: lower 12s linear infinite;
+			}
+			.text_info_automobile>h1>span:nth-of-type(1) {
+			  animation: upper 5s linear infinite;
+			}
+			.text_info_automobile>h1>span:nth-of-type(4) {
+			  animation: upper 5s linear infinite;
+			}
+			.text_info_automobile>h1>span:nth-of-type(2) {
+			  animation: lower 12s linear infinite;
+			}
+			
+
+
+
+
+
+			.text_info_jobs>h4{
+				text-transform:uppercase;
+			font-family: 'Neuropol_Medium'; 
+			color: white;
+			font-size: 13px;/* Приближение из-за подстановки шрифтов */
+			font-weight: 400;
+			line-height: 25px;/* Приближение из-за подстановки шрифтов */
+			text-align: left;
+			text-shadow: white 0px 0px 5px, 
+			white 0px 0px 10px, 
+			white 0px 0px 25px;
+
+		
+		}
+		.text_info_jobs{
+			margin-top:50px;
+			
+		}
+
+
+		.text_info_jobs_call>h3{
+			text-transform: uppercase;
+			font-family: 'Neuropol_Medium'; 
+			color: white;
+			font-size: 15px;/* Приближение из-за подстановки шрифтов */
+			font-weight: 400;
+			line-height: 15px;/* Приближение из-за подстановки шрифтов */
+			text-align: center;
+			text-shadow: white 0px 0px 5px, 
+			white 0px 0px 10px, 
+			white 0px 0px 25px;
+		}
+			
+		.text_info_jobs_call{
+			margin-top:50px;
+			
+		}
+		.text_info_jobs_call>h3>i{
+			
+			color: white;
+			font-family: 'a_SamperOtl';		
+			font-size: 40px;
+			text-shadow: blue 0px 0px 5px, 
+			blue 0px 0px 10px, 
+			blue 0px 0px 15px,
+			blue 0px 0px 20px, 
+			blue 0px 0px 30px, 
+			blue 0px 0px 40px, 
+			blue 0px 0px 50px, 
+			blue 0px 0px 75px;
+			text-align: center;
+		}
+		.text_info_automobile>h1{
+			color: white;
+			text-align: center;
+		}
+	
+	
+
+	.text_info_jobs_service{
+		margin-top: 15px;
+		margin-bottom: 50px;
+	}
+	.text_info_jobs_service>h2{
+		text-align: center;
+		color: white;
+		font-family: 'Stylo_Bold';
+	}
+
+
+/*==================>FOOTER-BUTTON<===================*/
+
+section#order_call{
+
+	}	
+	.call_buttons_specialist_footer{
+		
+		margin-top: 25px;
+		text-align: center;
+		margin-bottom:50px;
+		
+
+	}
+	.call_buttons_specialist_footer>b{
+
+		font-family: 'Conv_MyriadPro-Regular';
+		color:  white;
+		font-size: 18px;
+		font-weight: 400;
+		text-align: center;
+		background-color: #FB2838;
+		
+
+	}
+	.call_buttons_specialist_footer>b>button{
+		width: 260px;
+		height: 44px;
+		margin-top: -10px;
+		margin-left: -10px;
+		padding:10px 10px;
+		border: none;
+		background-color: #FB2838;
+		box-shadow: 1px 1px 1px 1px #323232;
+		border-radius: 10px;
+	}
+	.call_buttons_specialist_footer>b>button:hover{
+		color: #FB2838;
+		background-color: black; 
+	}
+		.copyright>h5{
+			
+			font-family: 'Conv_Proxima Nova Regular';
+			color: white;
+			font-size: 12px; /* Приближение из-за подстановки шрифтов */
+			font-weight: 400;
+			text-align: center;
+			padding-top: 10px;
+			margin-right: 20px;
+		}
+
+
+
+
+
+
+
+
+/*=================ВСПЛЫВАЮЩИЕ ОКНО<=====================*/
+	.modal-header{
+			margin-top: 20px;
+			background-color: black;
+			
+			}
+	
+
+		button[aria-label="Close"]{
+			color: white;
+			text-shadow: #DA0809 0px 0px 5px, 
+			#DA0809 0px 0px 10px, 
+			#DA0809 0px 0px 15px, 
+			#DA0809 0px 0px 20px, 
+			#DA0809 0px 0px 30px, 
+			#DA0809 0px 0px 40px, 
+			#DA0809 0px 0px 50px, 
+			#DA0809 0px 0px 75px;
+				}
+		
+		.modal-title{
+			font-size: 25px;
+			font-family: 'Stylo_Bold';
+			text-shadow: #DA0809 0px 0px 5px, 
+			#DA0809 0px 0px 10px, 
+			#DA0809 0px 0px 15px, 
+			#DA0809 0px 0px 20px, 
+			#DA0809 0px 0px 30px, 
+			#DA0809 0px 0px 40px, 
+			#DA0809 0px 0px 50px, 
+			#DA0809 0px 0px 75px;
+			padding-top: 20px;
+			color:white;
+			text-align: center;
+		}
+
+				.modal-dialog{
+				margin-top: 15%;
+				}
+				.modal-body{
+					background-color: black;
+					opacity: 0.9;
+				}
+
+				.modal-title{
+					text-align: center;
+				}
+
+
+				
+				.first_name_modal{
+						text-align: center;
+						
+					}
+					.last_name_modal{
+						text-align: center;
+						
+					}
+					.first_name_modal>input{
+						background-color:black;
+						border: 5px solid white;
+						padding-left: 15px;
+						color: white;
+						width: 250px;
+						height: 44px;
+
+					}
+					
+					input[name="first_name_modal"]{
+						font-family: 'Neuropol_Medium';
+						font-size: 14px;/* Приближение из-за подстановки шрифтов */
+						text-align: left;
+						margin-bottom:20px;
+						margin-top: 10px;
+						background-color: black;
+						color: red;
+						
+					}
+					#first_name_modal::-webkit-input-placeholder {
+						color:white;
+						text-shadow: 0px 0px 6px white;
+					}
+
+					
+
+					.last_name_modal>input{
+						background-color:black;
+						border: 5px solid white;
+						padding-left: 15px;
+						color: white;
+						width: 250px;
+						height: 44px;
+					}
+					input[name="last_name_modal"]{
+						font-family: 'Neuropol_Medium';
+						color:  red;
+						font-size: 14px;/* Приближение из-за подстановки шрифтов */
+						text-align: left;
+					}
+
+					#last_name_modal::-webkit-input-placeholder {
+						color:white;
+						text-shadow: 0px 0px 6px white;
+					}
+
+
+					.call_buttons_modal{
+						margin-top: 28px;
+						margin-bottom:15px;
+						text-align: center;
+
+					}
+					.call_buttons_modal>b{
+						font-family: 'Stylo_Bold';
+						color:  white;
+						font-size: 22px;
+						font-weight: 400;
+						text-align: center;
+						
+						
+
+					}
+					.call_buttons_modal>b>button{
+						
+						
+						margin-top: -10px;
+						margin-left: -10px;
+						padding:10px 10px;
+						border: none;
+						background-color: #EA0F0C;
+						box-shadow: 1px 1px 1px 1px #323232;
+						border-radius: 10px;
+					}
+					.call_buttons_modal>b>button:hover{
+						color:  black;
+						text-shadow: #EA0F0C 0px 0px 1px, 
+						#EA0F0C 0px 0px 5px, 
+						#EA0F0C 0px 0px 10px, 
+						#EA0F0C 0px 0px 15px, 
+						#EA0F0C 0px 0px 20px, 
+						#EA0F0C 0px 0px 25px, 
+						#EA0F0C 0px 0px 30px, 
+						#EA0F0C 0px 0px 35px;
+						background-color: white; 
+					}
+
+
+
+
+/*==================>О НАС<===============================*/
+
+/*==================>PORTFOLIO<===========================*/
+
+/*==================>CONTACT<=============================*/
+
+/*==================>FOOTER<==============================*/
+
+
+
+
+/*================= АДАПТИВ ==============================*/
+
+.dropdown-toggle{
+	border: 1px solid black;
+	padding: 5px;
+	z-index: 33;
+	color:white;
+	background-color: #DA0809;
+	background-size: cover;
+	background-position: center;
+}
+
+
+.dropdown-toggle:hover{
+	color:  red;
+
+
+}
+
+
+.dropdown-menu{
+	background-color: black;
+	box-shadow: 1px 1px 1px 2px #323130;
+	opacity: 0.9;
+}
+.dropdown-menu>li>a{
+	color:  white;
+	
+}
+
+.but_baground{
+	top:-45px;
+	background-color: black;
+	box-shadow: 1px 1px 1px 2px #323130;
+	opacity: 0.9;
+	width: 100%;
+	height: 45px;
+}
+
+
+/*============>ВЫЗОВ ЭВАКУАТОРА<=================*/
+
+
+/*==============>ШИНОМОНТАЖ ТЕКСТ<==================*/
+
+
+/*===============>SUBSCRIBE<========================*/
+
+
+			
+/*================>ВЫЗОВ СПЕЦИАЛИСТА<===============*/
+
+
+/*=================>FOOTER<==========================*/
+
+
+/*==================>НОМЕР-ГОРОД<====================*/
+
+
+
+
+
+
+
+@media (max-width:326px) {
+	.fon2{
+			margin-top: -170px;
+		}
+	.main_info_logo{
+		margin-top:-100px;
+	}
+	.main_info>img{
+		width: 250px;
+    	}
+
+	.glavn_desktop_help>h2{
+		font-size: 24px;
+		text-align:center;
+		
+    	}
+    	
+		.glavn_desktop_infocall>h3{
+			font-size: 12px;
+			text-align: left;
+		}
+
+		.desktop_a_light>h2{
+			font-size: 20px;
+		}
+
+		.desktop_a_light_number>h2{
+			font-size: 24px;
+		}
+
+		.desktop_text_auto>h2{
+			font-size: 20px;
+			text-align: center;
+		}
+		.desktop_text_autocall>h1{
+			text-align: center;
+			font-size: 30px;
+		}
+		.desktop_text_broken>h4{
+			text-align: center;
+			font-size: 30px;
+		}
+		.section_info_more>h3{
+			margin-top: -50px;
+			text-align: left;
+			font-size: 12px;
+		}
+
+		.text_cena{
+			
+		}
+		.error_text>h2{
+			font-size: 24px;
+		}
+
+		.text_phone_info>h3{
+			margin-top:-50px;
+			text-align: center;
+			font-size: 12px;
+			
+		}
+
+		.header_info_subscribe>h2{
+			font-size: 20px;
+		}
+		.text_city>h3{
+			font-size: 20px;
+		}
+
+		.text_info_automobile>h1{
+			font-size: 25px;
+		}
+
+		.text_info_jobs>h4{
+			text-align: center;
+			font-size: 10px;
+		}
+		.first_name>input{
+
+			margin-top:-20px;
+			margin-bottom: 10px;
+
+		}
+			.last_name>input{
+			margin-bottom:15px;
+		}
+
+			}	
+
+@media (min-width: 327px) and (max-width:486px){
+	.fon2{
+			margin-top: -170px;
+		}
+	.main_info_logo{
+		margin-top:-100px;
+	}
+	.main_info>img{
+		width: 250px;
+    	}
+
+	.glavn_desktop_help>h2{
+		font-size: 26px;
+		text-align:center;
+		
+    	}
+    	.glavn_desktop_infocall>h3{
+			font-size: 12px;
+			text-align: left;
+		}
+		.desktop_a_light>h2{
+			font-size: 22px;
+		}
+
+		.desktop_a_light_number>h2{
+			font-size: 26px;
+		}
+
+		.desktop_text_auto>h2{
+			font-size: 28px;
+			text-align: center;
+		}
+		.desktop_text_autocall>h1{
+			text-align: center;
+			font-size: 33px;
+		}
+		.desktop_text_broken>h4{
+			text-align: center;
+			font-size: 30px;
+		}
+		.section_info_more>h3{
+			margin-top: -50px;
+			text-align: center;
+			font-size: 12px;
+		}
+
+		.text_cena{
+			
+			text-align: center;
+		}
+			.error_text>h2{
+			font-size: 24px;
+		}
+
+		.first_name>input{
+			margin-top:-20px;
+			margin-bottom: 10px;
+
+		}
+			.last_name>input{
+			margin-bottom:15px;
+		}
+
+		.text_phone_info>h3{
+			margin-top:-50px;
+			text-align: center;
+			font-size: 12px;
+		}
+
+		.header_info_subscribe>h2{
+			font-size: 20px;
+		}
+		.text_city>h3{
+			font-size: 25px;
+		}
+
+		.text_info_automobile>h1{
+			font-size: 30px;
+		}
+
+		.text_info_jobs>h4{
+			text-align: center;
+			font-size: 12px;
+		}
+	}
+
+@media (min-width: 487px) and (max-width:766px){
+
+	
+				.fon2{
+						margin-top: -170px;
+					}
+				.main_info_logo{
+					margin-top:-100px;
+				}
+				.main_info>img{
+					width: 300px;
+			    	}
+
+				.glavn_desktop_help>h2{
+					font-size: 26px;
+					text-align:center;
+					
+			    	}
+			    	.glavn_desktop_infocall>h3{
+						font-size: 12px;
+						text-align: left;
+					}
+					.desktop_a_light>h2{
+						font-size: 22px;
+					}
+
+					.desktop_a_light_number>h2{
+						font-size: 30px;
+					}
+
+					.desktop_text_auto>h2{
+						font-size: 28px;
+						text-align: center;
+					}
+					.desktop_text_autocall>h1{
+						text-align: center;
+						font-size: 33px;
+					}
+					.desktop_text_broken>h4{
+						text-align: center;
+						font-size: 30px;
+					}
+					.section_info_more>h3{
+						margin-top: -50px;
+						text-align: center;
+						font-size: 18px;
+					}
+
+					.text_cena{
+						
+						text-align: center;
+					}
+						.error_text>h2{
+							font-size: 24px;
+		}
+							.text_phone_info>h3{
+								margin-top:-50px;
+								text-align: center;
+								font-size: 18px;
+							}
+
+							.first_name>input{
+								margin-top:-20px;
+								margin-bottom: 10px;
+
+							}
+								.last_name>input{
+								margin-bottom:15px;
+							}
+
+							
+
+							.header_info_subscribe>h2{
+								font-size: 28px;
+							}
+							.text_city>h3{
+								font-size: 30px;
+							}
+
+							.text_info_automobile>h1{
+								font-size: 30px;
+							}
+
+							.text_info_jobs>h4{
+								text-align: center;
+								font-size: 16px;
+							}}
+
+@media (min-width: 767px) and (max-width:1023px){
+
+				.main_info_logo{
+					margin-top:100px;
+				}
+				.main_info>img{
+					margin-top:100px;
+					width: 300px;
+			    	}
+
+				.top_navigation>li{
+				text-align: left;
+				padding: 5px;
+				border-radius: 2px;
+				border: 3px solid black;
+
+				
+				}
+				.top_navigation>li>a{
+	
+				text-align: left;
+				text-decoration: none;
+				font-size: 12px;
+				}
+				.top_navigation>li>a{
+					font-size: 20px;
+				}
+				.glavn_desktop_ts>h1{
+					text-align: center;
+					font-size: 18px;
+				}
+				
+				.glavn_desktop_phone>h3{
+					font-size: 19px;
+					text-align: center;
+				}
+
+				.glavn_desktop_help>h2{
+					font-size: 45px;
+					text-align:center;
+					
+		    	}
+
+
+
+		    	.glavn_desktop_infocall>h3{
+					font-size: 18px;
+					text-align: left;
+				}
+				.desktop_a_light>h2{
+					font-size: 33px;
+				}
+
+				.desktop_a_light_number>h2{
+					font-size: 30px;
+				}
+
+				.desktop_text_auto>h2{
+					font-size: 35px;
+					text-align: center;
+				}
+				.desktop_text_autocall>h1{
+					text-align: center;
+					font-size: 44px;
+				}
+				.desktop_text_broken>h4{
+					text-align: center;
+					font-size: 30px;
+				}
+				.section_info_more>h3{
+					margin-top: -50px;
+					text-align: center;
+					font-size: 24px;
+				}
+
+				.text_cena{
+					
+					text-align: center;
+				}
+				.text_phone_info>h3{
+					margin-top:-50px;
+					text-align: center;
+					font-size: 24px;
+				}
+
+				.first_name>input{
+					margin-top:-20px;
+					margin-bottom: 10px;
+
+				}
+					.last_name>input{
+					margin-bottom:15px;
+				}
+
+				
+
+				.header_info_subscribe>h2{
+					font-size: 28px;
+				}
+				.text_city>h3{
+					font-size: 30px;
+				}
+
+				.text_info_automobile>h1{
+					font-size: 30px;
+				}
+
+				.text_info_jobs>h4{
+					text-align: center;
+					font-size: 16px;
+				}}
+
+@media (min-width: 1024px) and (max-width: 1279px){
+				.main_info_logo{
+					margin-top:100px;
+				}
+				.main_info>img{
+					margin-top:100px;
+					margin-left: 33px;
+					width: 350px;
+			    	}
+
+				.top_navigation>li{
+				text-align: left;
+				padding: 11px;
+				border-radius: 2px;
+				border: 3px solid black;
+
+				
+				}
+				.top_navigation>li>a{
+	
+				text-align: left;
+				text-decoration: none;
+				font-size: 12px;
+				}
+				.top_navigation>li>a{
+					font-size: 20px;
+				}
+				.glavn_desktop_ts>h1{
+					text-align: center;
+					font-size: 18px;
+				}
+				
+				.glavn_desktop_phone>h3{
+					font-size: 20px;
+					text-align: center;
+				}
+
+				.glavn_desktop_help>h2{
+					font-size: 45px;
+					text-align:center;
+					
+		    	}
+
+				.first_name_phone>input{
+					width: 200px;
+				}
+				.last_name_phone>input{
+					width: 200px;
+				}
+
+		    	.glavn_desktop_infocall>h3{
+					font-size: 18px;
+					text-align: left;
+				}
+				.desktop_a_light>h2{
+					font-size: 33px;
+				}
+
+				.desktop_a_light_number>h2{
+					font-size: 30px;
+				}
+
+				.desktop_text_auto>h2{
+					font-size: 35px;
+					text-align: center;
+				}
+				.desktop_text_autocall>h1{
+					text-align: center;
+					font-size: 44px;
+				}
+				.desktop_text_broken>h4{
+					text-align: center;
+					font-size: 30px;
+				}
+				.section_info_more>h3{
+					margin-top: -50px;
+					text-align: center;
+					font-size: 14px;
+				}
+
+				.text_cena{
+					
+					text-align: center;
+				}
+				.text_phone_info>h3{
+					margin-top:-50px;
+					text-align: center;
+					font-size: 14px;
+				}
+
+				.first_name>input{
+					
+				}
+					.last_name>input{
+					margin-left: 50px;
+				}
+
+				.subscribe_button{
+					
+					width: 300px;
+					margin-left: 90px;
+				}
+				.subscribe_button>b{
+					font-size: 18px;
+				}
+
+				.header_info_subscribe>h2{
+					font-size: 28px;
+				}
+				.text_city>h3{
+					font-size: 30px;
+				}
+
+				.text_info_automobile>h1{
+					font-size: 30px;
+				}
+
+				.text_info_jobs>h4{
+					text-align: center;
+					font-size: 16px;
+				}}
+
+
+
